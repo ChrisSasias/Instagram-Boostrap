@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6c13621196.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class=>
+    <!-- comienzo de la navbar  -->
+    <div class="colorizer">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary  ">
+        <div class="container-fluid ">
+          <a class="navbar-brand " href="#" >
+            <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" alt="instagram-image" width="30" height="30" class="d-inline-block align-text-top" >
+            Instagram
+          </a>
+        <div class="derecha">
+          <button type="button" class="btn btn-success derecha me-2 mx-2 my-sm-0 bg-success text-white"  data-bs-target="#exampleModal" data-bs-toggle="modal" >Create a new post</button>
+    
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <span>Caption:</span>
+                  <div class="input-group">
+                    <textarea class="form-control" aria-label="With textarea"placeholder="Add the caption of your post here"></textarea>
+                  </div>
+                  <div class="organize pad">
+                    <div class="uno" >
+                      <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-fill uno space" viewBox="0 0 16 16">
+                        <path d="M10.5 8.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                        <path d="M2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2zm.5 2a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1zm9 2.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0z"/>
+                      </svg></button>
+                      
+                    </div>
+                    <div class="uno" >
+                      <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill uno space" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                      </svg></button>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary bg-success text-white">Publish</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- modal -->
+          <!-- dropdown -->
+          <div class="dropdown" m-2>
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill" viewBox="0 0 16 16">
+                <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+              </svg>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-lg-end"  aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Action</a><li>
+              <li><a class="dropdown-item" href="#">Another action</a><li>
+              <li><a class="dropdown-item" href="#">Something else here</a><li>
+              <li><a class="dropdown-divider" href="#"></a><li>
+              <li><a class="dropdown-item color" href="#" );>Log Out</a><li>
+            <ul/>
+          </ul>
+        </div>
+      </div>
+     </nav>
+    </div>
+     <!-- dropdown -->
+    <!-- final de la navbar  -->
+    <div class="d-flex justify-content-center">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-square-fill" viewBox="0 0 16 16">
+              <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"/>
+            </svg></button>
+            </li>
+            <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3" viewBox="0 0 16 16">
+              <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5V5h4V1H1.5zM5 6H1v4h4V6zm1 4h4V6H6v4zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5v-4zm1 0v4h4v-4H6zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11h-4zm0-1h4V6h-4v4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11v4zm-1 0V1H6v4h4z"/>
+            </svg></button>
+            </li>       
+        </ul>
+    </div>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <!-- aqui van las publicaciones -->
+
+            <!-- primer publicacion -->
+        <div class="d-flex justify-content-center">
+           <div>                  
+             <div class="card separar" style="width: 50rem;">
+              <div class="property">
+                <h2 class="card-title mt-2 tamaño">My Crazy red panda Sparks</h2> <span class="size">08/26</span>
+              </div>
+                <img src="https://cdn.pixabay.com/photo/2023/04/14/15/43/red-panda-7925410_1280.jpg" class="card-img-top" alt="img">
+              <div class="card-body">
+                  <h6 class="card-title"><b>205 Likes</b></h6>
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo cupiditate delectus voluptatibus ipsum atque tempore dolores, minus magnam nemo culpa beatae asperiores praesentium eveniet voluptates cumque soluta facilis repellendus porro!</p>
+             </div>
+            </div>
+            <!-- fin primer publicacion-->
+            <!-- segunda publicacion -->
+            <div class="card separar" style="width: 50rem;">
+              <div class="property " >
+                <h2 class="card-title mt-2 tamaño">My Crazy red panda Sparks</h2> <span class="size">08/26</span>
+              </div>
+              <img src="https://cdn.pixabay.com/photo/2023/04/20/02/49/night-view-7938874_1280.jpg" class="card-img-top" alt="img">
+             <div class="card-body">
+                 <h6 class="card-title"><b>4000 Likes</b></h6>
+                 <p class="card-text">This is an example on a very good photo that you panda </p>
+            </div>
+           </div>
+            <!-- fin segunda publicacion -->
+            <!-- tercera publicacion -->
+            <div class="card separar" style="width: 50rem;">
+              <div class="property">
+                <h2 class="card-title mt-2 tamaño">My Crazy red panda Sparks</h2> <span class="size">08/26</span>
+              </div>
+               <img src="https://cdn.pixabay.com/photo/2023/04/20/15/41/rose-7940061_1280.jpg" class="card-img-top" alt="img">
+             <div class="card-body">
+                 <h6 class="card-title"><b>4000 Likes</b></h6>
+                 <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo cupiditate delectus voluptatibus ipsum atque tempore dolores, minus magnam nemo culpa beatae asperiores praesentium eveniet voluptates cumque soluta facilis repellendus porro!</p>
+            </div>
+           </div>
+            <!-- fin tercera publicacion -->
+            <!-- cuarta publicacion-->
+            <div class="card separar" style="width: 50rem;">
+              <div class="property">
+                <h2 class="card-title mt-2 tamaño">My Crazy red panda Sparks</h2> <span class="size">08/26</span>
+              </div>
+               <img src="https://cdn.pixabay.com/photo/2023/04/18/20/08/mountain-7935913_1280.jpg" class="card-img-top" alt="img">
+             <div class="card-body">
+                 <h6 class="card-title"><b>4000 Likes</b></h6>
+                 <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo cupiditate delectus voluptatibus ipsum atque tempore dolores, minus magnam nemo culpa beatae asperiores praesentium eveniet voluptates cumque soluta facilis repellendus porro!</p>
+            </div>
+           </div>
+            <!-- fin cuarta publicacion -->
+            <!-- quinta publicacion -->
+          <div class="card separar" style="width: 50rem;">
+             <div class="property">
+                <h2 class="card-title mt-2 tamaño">My Crazy red panda Sparks</h2> <span class="size">08/26</span>
+              </div>
+               <img src="https://cdn.pixabay.com/photo/2023/04/17/13/04/mountains-7932416_1280.jpg" class="card-img-top" alt="img">
+             <div class="card-body">
+                 <h6 class="card-title"><b>4000 Likes</b></h6>
+                 <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo cupiditate delectus voluptatibus ipsum atque tempore dolores, minus magnam nemo culpa beatae asperiores praesentium eveniet voluptates cumque soluta facilis repellendus porro!</p>
+            </div>
+           </div>
+            <!-- fin quinta publicacion -->
+            <!-- sexta publicacion -->
+            <div class="card separar" style="width: 50rem;">
+              <div class="property">
+                <h2 class="card-title mt-2 tamaño">My Crazy red panda Sparks</h2> <span class="size">08/26</span>
+              </div>
+               <img src="https://cdn.pixabay.com/photo/2023/04/18/16/13/ducks-7935499_1280.jpg" class="card-img-top" alt="img">
+             <div class="card-body">
+                 <h6 class="card-title"><b>4000 Likes</b></h6>
+                 <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo cupiditate delectus voluptatibus ipsum atque tempore dolores, minus magnam nemo culpa beatae asperiores praesentium eveniet voluptates cumque soluta facilis repellendus porro!</p>
+            </div>
+           </div>
+            <!-- fin sexta publicacion -->
+        </div>
+    </div>
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"> <!-- inicio de grillas () -->
+          <div class="container text-center">
+              <div class="row ">
+                  <div class="col-12 col-lg-4 img-fluid h-100 aliniacion">
+                      <img src="https://cdn.pixabay.com/photo/2023/04/14/15/43/red-panda-7925410_1280.jpg" class="card-img-top" alt="publication">
+                  </div>
+                  <div class="col-12 col-lg-4 img-fluid h-100 aliniacion">
+                      <img src="https://cdn.pixabay.com/photo/2023/04/20/02/49/night-view-7938874_1280.jpg" class="card-img-top" alt="publication">
+                  </div>
+                  <div class="col-12 col-lg-4 img-fluid h-100 aliniacion">
+                      <img src="https://cdn.pixabay.com/photo/2023/04/20/15/41/rose-7940061_1280.jpg" class="card-img-top" alt="publication">
+                  </div>
+                  <div class="col-12 col-lg-4 img-fluid h-100 aliniacion" >
+                      <img src="https://cdn.pixabay.com/photo/2023/04/18/20/08/mountain-7935913_1280.jpg" class="card-img-top" alt="publication">
+                  </div>
+                  <div class="col-12 col-lg-4 img-fluid h-100 aliniacion">
+                      <img src="https://cdn.pixabay.com/photo/2023/04/17/13/04/mountains-7932416_1280.jpg" class="card-img-top" alt="publication">
+                  </div>
+                  <div class="col-12 col-lg-4 img-fluid h-100 aliniacion">
+                      <img src="https://cdn.pixabay.com/photo/2023/04/18/16/13/ducks-7935499_1280.jpg" class="card-img-top" alt="publication">
+                  </div>
+                  <div class="col-12 col-lg-4 img-fluid h-100 aliniacion">
+                    <img src="https://cdn.pixabay.com/photo/2023/04/06/07/12/blossom-7903068_1280.jpg" class="card-img-top" alt="publication">
+                </div>
+                <div class="col-12 col-lg-4 img-fluid h-100 aliniacion">
+                    <img src="https://cdn.pixabay.com/photo/2023/04/18/20/30/bird-7935953_1280.jpg" class="card-img-top" alt="publication">
+                </div>
+                <div class="col-12 col-lg-4 img-fluid h-100 aliniacion">
+                    <img src="https://cdn.pixabay.com/photo/2023/04/14/18/09/bee-7925661_1280.jpg" class="card-img-top" alt="publication">
+                </div>              
+                </div>
+            </div>
+         <!-- final de publicaciones  --></div>
+       </div>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>

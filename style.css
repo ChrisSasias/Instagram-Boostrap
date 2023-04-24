@@ -1,0 +1,81 @@
+/* *{
+ border: solid red 1px;
+} */
+
+a {
+    color: #000;
+    text-decoration: underline;
+}
+
+.derecha{
+    display: flex;
+    justify-content: right;
+    position: relative;
+    justify-content: space-around;
+    }
+
+.aliniacion{
+ margin: 0;
+ padding: 1px;
+ border: 0;
+}
+button .btn.btn-primary .funcion{
+
+    background-color: green;
+}
+.organize {
+ display:flex;
+ justify-content: start;
+}
+.uno {
+  padding: 3px;
+}
+
+.card {
+    border: solid 1px grey;
+}
+
+.color{
+    color: red;
+}
+
+.space {
+    width: 20px;
+    height: 20px;
+   }
+
+  .pad .organize{
+    padding: 5px;
+  }
+  
+.property{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .size{
+   
+    font-size: 1.5rem;
+    color: grey;
+    margin-right: 5px;
+
+  }
+
+  .separar{
+   
+    margin-top:20px;
+    margin-bottom: 20px ;
+  }
+
+  .tamaño {
+   
+    margin-left:5px;
+    
+  }
+
+  .colorizer{
+   
+   
+    background-color: rgb(236, 236, 236);
+    
+  }
